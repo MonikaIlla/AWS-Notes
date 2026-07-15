@@ -1,0 +1,32 @@
+                                                                                 S3 = SIMPLE STORAGE SERVICE
+Evolution of storing data:
+In past:
+memory card
+   hard disk
+   pendrive
+Present:
+   Cloud 
+-->  Unlike servers, s3 will be replicated in every availibility zones in a specific region 
+-->  High Availibility
+--> Provides Versioning
+-->  Three level of securities: SSE(Server side encryption) , KMS(Key management service) , Client side
+--> Default : SSE     For more additional security: KMS
+--> To give permission for an s3 bucket : make public using ACL ( Access control list) 
+--> To delete any s3 bucket 1) delete objects (or) empty in bucket then delete
+--> We can create multiple AWS S3 buckets using Terraform through for each.
+Diff between locals and variables:
+Input takes from user,easily override : Variables
+For reuse of values,does not override  : Locals
+--> We can store s3 buckets instead of  Nexus Repository to reduce the cost.
+Storage classes:
+  S3 Standard : Frequently accessed files ,Websites, applications, active data
+  S3 Intelligent-Tiering: You don't know how often data will be accessed.AWS automatically moves objects between access tiers to reduce costs
+  S3 Standard-IA: Backups,Disaster recovery files,Documents accessed occasionally
+  S3 One Zone-IA: Re-creatable or non-critical data,Lower cost because data is stored in a single Availability Zone
+  S3 Glacier Instant Retrieval: Medical records,Media archives that require immediate retrieval
+  S3 Glacier Flexible Retrieval: Long-term backups,Compliance archives
+  S3 Glacier Deep Archive: Records that are rarely accessed but must be retained for years,Lowest-cost storage option
+
+
+
+
