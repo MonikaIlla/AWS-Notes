@@ -1,0 +1,13 @@
+Load balancer : A service which distributes traffic among each server or containers or instances
+-----Task------
+Differences between types of load balancer:
+--------------
+HTTPS: 80
+HTTPS: 443
+Target group : A group of servers or IP addresses where we need to distribute the traffic
+Number of selected servers for target groups = Number of Target groups
+Load balancer takes time because at backend it checks the health
+Web Application Firewall(WAF) : It is used to block or allow a specific IP Address
+Default path for web servers: /var/www/html
+Auto Scaling Groups:
+it increases/decreases desired number of instances based on traffic
