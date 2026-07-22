@@ -1,0 +1,29 @@
+VPC = Virtual Private Cloud
+AWS Provides us the public cloud 
+Public cloud does not guarantee the security
+For security, We create seperate virtual private cloud in a large public cloud hence it gives security as well as isolation.
+By default AWS Provides 1 default VPC in each region
+VPC Components:
+Dividing a large network into small networks = Subnets
+--> We create subnets in different Availability Zones (AZs) within a VPC so that we can deploy servers across multiple data centers in a Region. 
+--> This improves high availability and fault tolerance because if one Availability Zone becomes unavailable, resources in the other Availability Zones continue to operate.
+A subnet consistes of two parts:
+1)Public subnet  : 
+2)Private subnet 
+VPC Architecture: 
+"A VPC is a logically isolated virtual network in AWS. We create public and private subnets across multiple Availability Zones for high availability.
+Public subnets contain internet-facing resources like Application Load Balancers, Bastion Hosts, and NAT Gateways, while private subnets host application servers and databases.
+An Internet Gateway provides internet access to public subnets, and a NAT(Network Access Transaltion) Gateway allows private instances to access the internet for updates without exposing them. 
+Security Groups protect instances, and Network ACLs protect subnets."
+NAT = It is used to guide to access the Provate subnets through Public Subnets
+Internet Gateway --> Public subnets
+Internet Gateway --> Public subnets--> NAT Gateway --> Private subnets
+Route tables helps us to guide to go to private or public subnets
+CIDR Block = (Classless Inter-Domain Routing) defines the range of IP addresses available for a VPC or subnet.
+10.0.0.0/16 to 10.0.0.28  
+we should calculate the no.of address as 2 power 32-n (here n is 16 or any between 16 to 28)
+Tenancy:
+Default: Shared network
+Dedicated: Private own network 
+
+
