@@ -1,0 +1,13 @@
+Cloudwatch is used to monitor resources in AWS and also stores the application logs in the form of metrics and logs,events and alarms
+Metrics : CPU Utilization and more
+Types of monitoring:
+1)Basic monitoring: free
+2)Detailed monitoring: billable
+Cloudtrail is a service which records every action done by aws users as events
+Trail to all regions
+Trail to one region
+Cloudwatch focuses on health and performance of AWS Services
+Cloudtrail focuses on user activity performed in AWS Environmnets.
+SNS = Simple notification service
+
+RDS: Amazon RDS(Relational data base service) supports multiple popular relational database engines, allowing you to run existing application code without modifications:
